@@ -22,6 +22,6 @@ func main() {
     var bval interface{}
     reader := bytes.NewReader(filebuf)
     decoder := plist.NewDecoder(reader)
-    decoder.Decode(bval)
+    decoder.Decode(&bval)
     fmt.Println(bval)
 }
